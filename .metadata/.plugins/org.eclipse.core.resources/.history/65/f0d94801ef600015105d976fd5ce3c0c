@@ -1,0 +1,47 @@
+import java.util.*;
+
+
+public class Solution {
+	
+	
+	
+	public static void getFibSequence(int i, int j, int n, ArrayList<Integer> fibSequence) {
+        int sum = fibSequence.get(i) + fibSequence.get(j);    
+        if(sum > n) { 
+            return;
+        } 
+        fibSequence.add(sum);
+        i++;
+        j++;
+        getFibSequence(i,j, n, fibSequence);
+	}
+
+	public static void main(String[] args) { 
+        ArrayList<Integer> fibSequence = new ArrayList<Integer>();
+        fibSequence.add(1);
+        fibSequence.add(2);
+        getFibSequence(0, 1, 4, fibSequence);
+        
+        for (int i : fibSequence) { 
+        	System.out.println(i);
+        }
+        
+        int n = 4;
+        for (int i = fibSequence.size()-1; i > 0; i--) { 
+        	if (fibSequence.get(i) <= n) { 
+        		System.out.println(1);
+        		System.out.println("    " + n);
+        		System.out.println("    " + fibSequence.get(i));
+        		int j = n - fibSequence.get(i);
+        		n = j;
+        		System.out.println("    " + n);
+
+        	} else { 
+        		System.out.println(0);
+        		System.out.println("    " + n);
+
+        	}
+        }
+ 
+	}
+}

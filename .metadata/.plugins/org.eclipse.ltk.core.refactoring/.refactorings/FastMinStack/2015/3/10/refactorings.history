@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;Knights.creatBoard()&apos; to &apos;createBoard&apos;&#x0A;- Original project: &apos;FastMinStack&apos;&#x0A;- Original element: &apos;Knights.creatBoard()&apos;&#x0A;- Renamed element: &apos;Knights.createBoard()&apos;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;creatBoard&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;{Knights.java[Knights~creatBoard" name="createBoard" references="true" stamp="1425762904521" version="1.0"/>
+</session>
